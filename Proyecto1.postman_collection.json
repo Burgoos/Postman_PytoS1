@@ -56,14 +56,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/client/6",
+					"raw": "localhost:8080/client/5",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
 						"client",
-						"6"
+						"5"
 					]
 				}
 			},
@@ -110,6 +110,226 @@
 					"path": [
 						"client",
 						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Credit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"idClient\": 4,\r\n    \"type\": \"person\",\r\n    \"amountGiven\": 20000,\r\n    \"amountPaid\": 0,\r\n    \"interestRateMonth\": 2.6,\r\n    \"fees\": 16,\r\n    \"feesPaid\": 0\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/credit",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"credit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Credit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/credit",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"credit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Credit by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/credit/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"credit",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Credit",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"idClient\": 4,\r\n    \"type\": \"person\",\r\n    \"amountGiven\": 20000,\r\n    \"amountPaid\": 10000,\r\n    \"interestRateMonth\": 2.6,\r\n    \"fees\": 16,\r\n    \"feesPaid\": 8\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/credit",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"credit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Credit",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/credit/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"credit",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Credit Card",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"idClient\": 4,\r\n    \"type\": \"person\",\r\n    \"limit\": 50000,\r\n    \"amountUsed\": 0,\r\n    \"interestRateMonth\": 3.2,\r\n    \"fees\": 8,\r\n    \"feesPaid\": 0,\r\n    \"cutoffDate\": 20,\r\n    \"limitDate\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/creditCard",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"creditCard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Credit Card",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/creditCard",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"creditCard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Credit Card by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/creditCard/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"creditCard",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Credit Card",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"idClient\": 4,\r\n    \"type\": \"company\",\r\n    \"limit\": 100000,\r\n    \"amountUsed\": 30000,\r\n    \"interestRateMonth\": 2.8,\r\n    \"fees\": 15,\r\n    \"feesPaid\": 5,\r\n    \"cutoffDate\": 27,\r\n    \"limitDate\": 15\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/creditCard",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"creditCard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Credit Card",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/creditCard/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"creditCard",
+						"2"
 					]
 				}
 			},
