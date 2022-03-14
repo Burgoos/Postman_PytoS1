@@ -1,339 +1,382 @@
 {
 	"info": {
-		"_postman_id": "03927e20-2329-4816-a405-a3a4a9c75c4a",
+		"_postman_id": "0f9cbc85-6efc-49f4-a0af-7fa6df9ea976",
 		"name": "Proyecto1",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "Add Client",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"id\": 6,\r\n    \"name\": \"Intercorp\",\r\n    \"identifier\": \"5454654654\",\r\n    \"type\": \"company\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+			"name": "Client",
+			"item": [
+				{
+					"name": "Add Client",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 6,\r\n    \"name\": \"Intercorp\",\r\n    \"identifier\": \"5454654654\",\r\n    \"type\": \"company\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/client",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"client"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "localhost:8081/client",
-					"host": [
-						"localhost"
-					],
-					"port": "8081",
-					"path": [
-						"client"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get All Client",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8081/client",
-					"host": [
-						"localhost"
-					],
-					"port": "8081",
-					"path": [
-						"client"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get Client by id",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8081/client/5",
-					"host": [
-						"localhost"
-					],
-					"port": "8081",
-					"path": [
-						"client",
-						"5"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Update Client",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"id\": 4,\r\n    \"name\": \"Pablito\",\r\n    \"identifier\": \"12345678\",\r\n    \"type\": \"person\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+				{
+					"name": "Get All Client",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/client",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"client"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "localhost:8081/client",
-					"host": [
-						"localhost"
-					],
-					"port": "8081",
-					"path": [
-						"client"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Delete Client",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "localhost:8081/client/6",
-					"host": [
-						"localhost"
-					],
-					"port": "8081",
-					"path": [
-						"client",
-						"6"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Add Credit",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"id\": 2,\r\n    \"idClient\": 4,\r\n    \"type\": \"person\",\r\n    \"amountGiven\": 20000,\r\n    \"amountPaid\": 0,\r\n    \"interestRateMonth\": 2.6,\r\n    \"fees\": 16,\r\n    \"feesPaid\": 0\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+				{
+					"name": "Get Client by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/client/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"client",
+								"5"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "localhost:8083/credit",
-					"host": [
-						"localhost"
-					],
-					"port": "8083",
-					"path": [
-						"credit"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get All Credit",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8083/credit",
-					"host": [
-						"localhost"
-					],
-					"port": "8083",
-					"path": [
-						"credit"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get Credit by id",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8083/credit/2",
-					"host": [
-						"localhost"
-					],
-					"port": "8083",
-					"path": [
-						"credit",
-						"2"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Update Credit",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"id\": 2,\r\n    \"idClient\": 4,\r\n    \"type\": \"person\",\r\n    \"amountGiven\": 20000,\r\n    \"amountPaid\": 10000,\r\n    \"interestRateMonth\": 2.6,\r\n    \"fees\": 16,\r\n    \"feesPaid\": 8\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+				{
+					"name": "Update Client",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 4,\r\n    \"name\": \"Pablito\",\r\n    \"identifier\": \"12345678\",\r\n    \"type\": \"person\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/client",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"client"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "localhost:8083/credit",
-					"host": [
-						"localhost"
-					],
-					"port": "8083",
-					"path": [
-						"credit"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Delete Credit",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "localhost:8083/credit/2",
-					"host": [
-						"localhost"
-					],
-					"port": "8083",
-					"path": [
-						"credit",
-						"2"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Add Credit Card",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"id\": 2,\r\n    \"idClient\": 4,\r\n    \"type\": \"person\",\r\n    \"limit\": 50000,\r\n    \"amountUsed\": 0,\r\n    \"interestRateMonth\": 3.2,\r\n    \"fees\": 8,\r\n    \"feesPaid\": 0,\r\n    \"cutoffDate\": 20,\r\n    \"limitDate\": 10\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+				{
+					"name": "Delete Client",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/client/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"client",
+								"6"
+							]
 						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8083/creditCard",
-					"host": [
-						"localhost"
-					],
-					"port": "8083",
-					"path": [
-						"creditCard"
-					]
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "Get All Credit Card",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8083/creditCard",
-					"host": [
-						"localhost"
-					],
-					"port": "8083",
-					"path": [
-						"creditCard"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get Credit Card by id",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8083/creditCard/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8083",
-					"path": [
-						"creditCard",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Update Credit Card",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"id\": 1,\r\n    \"idClient\": 4,\r\n    \"type\": \"company\",\r\n    \"limit\": 100000,\r\n    \"amountUsed\": 50000,\r\n    \"interestRateMonth\": 2.8,\r\n    \"fees\": 15,\r\n    \"feesPaid\": 8,\r\n    \"cutoffDate\": 27,\r\n    \"limitDate\": 15\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+			"name": "Credit",
+			"item": [
+				{
+					"name": "Add Credit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"idClient\": 5,\r\n    \"type\": \"company\",\r\n    \"amountGiven\": 200000,\r\n    \"amountPaid\": 0,\r\n    \"interestRateMonth\": 3.5,\r\n    \"fees\": 32,\r\n    \"feesPaid\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8083/credit",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"credit"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "localhost:8083/creditCard",
-					"host": [
-						"localhost"
-					],
-					"port": "8083",
-					"path": [
-						"creditCard"
-					]
+				{
+					"name": "Get All Credit",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8083/credit",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"credit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Credit by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8083/credit/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"credit",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Credit",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2,\r\n    \"idClient\": 4,\r\n    \"type\": \"person\",\r\n    \"amountGiven\": 20000,\r\n    \"amountPaid\": 10000,\r\n    \"interestRateMonth\": 2.6,\r\n    \"fees\": 16,\r\n    \"feesPaid\": 8\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8083/credit",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"credit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Credit",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8083/credit/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"credit",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Payment",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idCredit\": 1,\r\n    \"amount\": 5000,\r\n    \"datePay\": \"2022-04-13\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8083/credit/payment",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"credit",
+								"payment"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "Delete Credit Card",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "localhost:8083/creditCard/2",
-					"host": [
-						"localhost"
-					],
-					"port": "8083",
-					"path": [
-						"creditCard",
-						"2"
-					]
+			"name": "Credit Card",
+			"item": [
+				{
+					"name": "Add Credit Card",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2,\r\n    \"idClient\": 4,\r\n    \"type\": \"person\",\r\n    \"limit\": 50000,\r\n    \"amountUsed\": 0,\r\n    \"interestRateMonth\": 3.2,\r\n    \"fees\": 8,\r\n    \"feesPaid\": 0,\r\n    \"cutoffDate\": 20,\r\n    \"limitDate\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8083/creditCard",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"creditCard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Credit Card",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8083/creditCard",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"creditCard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Credit Card by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8083/creditCard/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"creditCard",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Credit Card",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"idClient\": 4,\r\n    \"type\": \"company\",\r\n    \"limit\": 100000,\r\n    \"amountUsed\": 50000,\r\n    \"interestRateMonth\": 2.8,\r\n    \"fees\": 15,\r\n    \"feesPaid\": 8,\r\n    \"cutoffDate\": 27,\r\n    \"limitDate\": 15\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8083/creditCard",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"creditCard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Credit Card",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8083/creditCard/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"creditCard",
+								"2"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		}
 	]
 }
