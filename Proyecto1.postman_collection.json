@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "0f9cbc85-6efc-49f4-a0af-7fa6df9ea976",
+		"_postman_id": "71723733-3d15-4d07-8057-85527866112c",
 		"name": "Proyecto1",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -234,13 +234,13 @@
 					"response": []
 				},
 				{
-					"name": "Update Payment",
+					"name": "Add Payment Credit",
 					"request": {
 						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"idCredit\": 1,\r\n    \"amount\": 5000,\r\n    \"datePay\": \"2022-04-13\"\r\n}",
+							"raw": "{\r\n    \"idCredit\": 2,\r\n    \"amount\": 10000,\r\n    \"datePay\": \"2022-04-08\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -273,7 +273,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\": 2,\r\n    \"idClient\": 4,\r\n    \"type\": \"person\",\r\n    \"limit\": 50000,\r\n    \"amountUsed\": 0,\r\n    \"interestRateMonth\": 3.2,\r\n    \"fees\": 8,\r\n    \"feesPaid\": 0,\r\n    \"cutoffDate\": 20,\r\n    \"limitDate\": 10\r\n}",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"idClient\": 5,\r\n    \"type\": \"company\",\r\n    \"limit\": 100000,\r\n    \"amountUsed\": 0,\r\n    \"interestRateMonth\": 2.8,\r\n    \"fees\": 20,\r\n    \"feesPaid\": 0,\r\n    \"cutoffDate\": 20,\r\n    \"limitDate\": 10\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -363,14 +363,70 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:8083/creditCard/2",
+							"raw": "localhost:8083/creditCard/1",
 							"host": [
 								"localhost"
 							],
 							"port": "8083",
 							"path": [
 								"creditCard",
-								"2"
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Consumption Credit Card",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idCreditCard\": 1,\r\n    \"amount\": 10000,\r\n    \"datePay\": \"2022-06-08\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8083/creditCard/consumption",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"creditCard",
+								"consumption"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Payment Credit Card",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idCredit\": 2,\r\n    \"amount\": 20000,\r\n    \"datePay\": \"2022-05-06\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8083/creditCard/payment",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"creditCard",
+								"payment"
 							]
 						}
 					},
