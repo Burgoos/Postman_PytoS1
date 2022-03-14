@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\": 5,\r\n    \"name\": \"Intercorp\",\r\n    \"identifier\": \"5454654654\",\r\n    \"type\": \"company\"\r\n}",
+					"raw": "{\r\n    \"id\": 6,\r\n    \"name\": \"Intercorp\",\r\n    \"identifier\": \"5454654654\",\r\n    \"type\": \"company\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -20,11 +20,11 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/client",
+					"raw": "localhost:8081/client",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8081",
 					"path": [
 						"client"
 					]
@@ -38,11 +38,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/client",
+					"raw": "localhost:8081/client",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8081",
 					"path": [
 						"client"
 					]
@@ -56,11 +56,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/client/5",
+					"raw": "localhost:8081/client/5",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8081",
 					"path": [
 						"client",
 						"5"
@@ -76,7 +76,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\": 4,\r\n    \"name\": \"Pedro\",\r\n    \"identifier\": \"12345678\",\r\n    \"type\": \"person\"\r\n}",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"name\": \"Pablito\",\r\n    \"identifier\": \"12345678\",\r\n    \"type\": \"person\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -84,11 +84,11 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/client",
+					"raw": "localhost:8081/client",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8081",
 					"path": [
 						"client"
 					]
@@ -102,11 +102,11 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/client/6",
+					"raw": "localhost:8081/client/6",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8081",
 					"path": [
 						"client",
 						"6"
@@ -130,11 +130,11 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/credit",
+					"raw": "localhost:8083/credit",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8083",
 					"path": [
 						"credit"
 					]
@@ -148,11 +148,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/credit",
+					"raw": "localhost:8083/credit",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8083",
 					"path": [
 						"credit"
 					]
@@ -166,14 +166,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/credit/1",
+					"raw": "localhost:8083/credit/2",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8083",
 					"path": [
 						"credit",
-						"1"
+						"2"
 					]
 				}
 			},
@@ -194,11 +194,11 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/credit",
+					"raw": "localhost:8083/credit",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8083",
 					"path": [
 						"credit"
 					]
@@ -212,11 +212,11 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/credit/2",
+					"raw": "localhost:8083/credit/2",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8083",
 					"path": [
 						"credit",
 						"2"
@@ -240,11 +240,11 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/creditCard",
+					"raw": "localhost:8083/creditCard",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8083",
 					"path": [
 						"creditCard"
 					]
@@ -258,11 +258,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/creditCard",
+					"raw": "localhost:8083/creditCard",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8083",
 					"path": [
 						"creditCard"
 					]
@@ -276,14 +276,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/creditCard/2",
+					"raw": "localhost:8083/creditCard/1",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8083",
 					"path": [
 						"creditCard",
-						"2"
+						"1"
 					]
 				}
 			},
@@ -296,7 +296,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\": 1,\r\n    \"idClient\": 4,\r\n    \"type\": \"company\",\r\n    \"limit\": 100000,\r\n    \"amountUsed\": 30000,\r\n    \"interestRateMonth\": 2.8,\r\n    \"fees\": 15,\r\n    \"feesPaid\": 5,\r\n    \"cutoffDate\": 27,\r\n    \"limitDate\": 15\r\n}",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"idClient\": 4,\r\n    \"type\": \"company\",\r\n    \"limit\": 100000,\r\n    \"amountUsed\": 50000,\r\n    \"interestRateMonth\": 2.8,\r\n    \"fees\": 15,\r\n    \"feesPaid\": 8,\r\n    \"cutoffDate\": 27,\r\n    \"limitDate\": 15\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -304,11 +304,11 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/creditCard",
+					"raw": "localhost:8083/creditCard",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8083",
 					"path": [
 						"creditCard"
 					]
@@ -322,11 +322,11 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/creditCard/2",
+					"raw": "localhost:8083/creditCard/2",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8083",
 					"path": [
 						"creditCard",
 						"2"
